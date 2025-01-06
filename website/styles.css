@@ -1,0 +1,8 @@
+body{
+    background-image:url('images/cork_bg.png');
+    background-repeat:repeat-y;
+     background-position:top;
+      background-attachment:scroll;
+      z-index: 1;
+      overflow-x: hidden;
+      margin:5px;}
