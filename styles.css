@@ -1,35 +1,67 @@
 body{
-    background-image:url('images/cork_bg.png');
-    background-repeat:repeat-y;
-    background-position:top;
     background-attachment:scroll;
-    overflow-x: hidden;
+    background-image:url('images/cork_bg.png');
+    background-position:top;
+    background-repeat:repeat-y;
     font-family: sans-serif;
-    padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
-header{
-    background-color:black;
-    color: white;
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.nav ul{
+    background: rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    margin: 0px;
     padding: 20px;
 }
 
-.section{
+.nav li{
+    background: rgb(247, 155, 242);;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.nav .logo a{
+    background-image: url("images/Home.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgba(0,0,0,0);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 0px;
+    text-align: right;
+}
+
+.nav .link a{
+    font-size: 25px;
+    position: relative;
+    height: 5px;
+}
+
+.buttons{ 
+    background: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: row;
     padding: 20px;
 }
-.section1{
-    background-color: white;
-    color: black;
+
+.buttons div{
+    margin: auto;   
 }
+
 .section2{
-    background-color: red;
-    color: black;
-}
-
-footer{
-    background-color:black;
-    color: white;
+    background: red;
     padding: 20px;
-
 }
