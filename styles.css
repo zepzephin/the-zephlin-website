@@ -72,3 +72,9 @@ body{
 .buttons div{
     margin: auto;   
 }
+
+.words{
+    background: rgba(0, 0, 0, 0.5);
+    color:aliceblue;
+    margin-left: 20px;
+}
