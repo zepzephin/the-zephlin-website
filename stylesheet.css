@@ -73,8 +73,19 @@ body{
     margin: auto;   
 }
 
-.words{
-    background: rgba(0, 0, 0, 0.5);
+.title{
     color:aliceblue;
-    margin-left: 20px;
+    background-color:rgba(0, 0, 0, 0.66);;
+    background-size: contain;
+    margin: 20px;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.content{
+    color:aliceblue;
+    background-color:rgba(0, 0, 0, 0.66);
+    padding: 5px;
+    margin: 20px;
+
 }
