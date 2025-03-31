@@ -8,5 +8,7 @@ RewriteRule ^(.+)$ $1.html [L,QSA]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
-RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
-RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
